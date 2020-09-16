@@ -1,20 +1,9 @@
 // ==UserScript==
-// @name         Local YouTube Downloader
-// @name:zh-TW   本地 YouTube 下載器
-// @name:zh-HK   本地 YouTube 下載器
-// @name:zh-CN   本地 YouTube 下载器
-// @name:ja      ローカル YouTube ダウンローダー
-// @name:kr      로컬 YouTube 다운로더
+// @name         YouTube Downloader
 // @namespace    https://blog.maple3142.net/
 // @version      0.9.31
-// @description        Download YouTube videos without external service.
-// @description:zh-TW  不需透過第三方服務即可下載 YouTube 影片。
-// @description:zh-HK  不需透過第三方服務即可下載 YouTube 影片。
-// @description:zh-CN  不需要透过第三方的服务就能下载 YouTube 视频。
-// @description:ja     外部サービスなしで YouTube 動画をダウンロード
-// @description:kr     외부 서비스없이 YouTube 동영상을 다운로드
-// @description:fr     Obtenez un lien brut YouTube sans service externe.
-// @author       maple3142
+// @description  Download YouTube videos without external service.
+// @author       Anonymous
 // @match        https://*.youtube.com/*
 // @require      https://unpkg.com/vue@2.6.10/dist/vue.js
 // @require      https://unpkg.com/xfetch-js@0.3.4/xfetch.min.js
@@ -24,11 +13,9 @@
 // @connect      googlevideo.com
 // @compatible   firefox >=52
 // @compatible   chrome >=55
-// @license      MIT
 // ==/UserScript==
 
 ; (function () {
-    'use strict'
     const DEBUG = true
     const RESTORE_ORIGINAL_TITLE_FOR_CURRENT_VIDEO = true
     const createLogger = (console, tag) =>
